@@ -33,3 +33,8 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
       - _This is the final layer, the output layer, which only has one neuron as the neuron as this neuron represents the final prediction. The sigmoid activation was utilized as the target variable is binary between 0 and 1. The sigmoid function transforms outputs into a value between 0 and 1._
 - **Was the target model performance achieved?**
   - **Yes**, the model had an accuracy higher than 75% once it was optimized.
+- **Steps Taken to Optimize the Model:**
+    1.  Checked the ASK_AMT column for outliers. There were 8,000 outliers out of approximately 34,000 rows of data. Removed any rows with ask amounts over the upper bound of the data set.
+        - In the future, I would try to break this column down into bins to keep all rows in the data
+    2.   For the APPLICATION_TYPE and CLASSIFICATION columns, used the `value_counts` function to determine how many of each value were in the column and bucketed the smaller groups together into an "Other" value
+    3.   Added an additional hidden layer to the neural network to increase the consideration of interactions between variables
