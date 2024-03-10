@@ -46,3 +46,6 @@ The neural network created for Alphabet Soup performed with **75% accuracy** in 
 3. Adding additional hidden layers and neurons
 
 Ultimately, it would be beneficial to run this data through a few different models to see if it might perform better. One model that comes to mind is the **Random Forest** model. The Random Forest model works well on data with outliers, runs efficiently on large databases, and prevents overfitting through the use of multiple classifiers. Additionally, the Random Forest model provides more transparency into which features impact the model through the feature importance function. This will provide analysts and stakeholders with more information on what features have the greatest impact on the model and in turn predict successful funding applicants.
+
+## Resources
+- Code for saving tensorflow weights as an HDH5 file found [here](https://www.tensorflow.org/tutorials/keras/save_and_load)
