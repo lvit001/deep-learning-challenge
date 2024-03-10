@@ -39,7 +39,7 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
     2.   For the APPLICATION_TYPE and CLASSIFICATION columns, used the `value_counts` function to determine how many of each value were in the column and bucketed the smaller groups together into an "Other" value
     3.   Added a third hidden layer to the neural network to increase the consideration of interactions between variables
     4.   Added more neurons to each layer for a total of 85 in the hidden layers. Did this to increase the speed of the model and reduce loss.
-### Summary
+## Summary
 The neural network created for Alphabet Soup performed with **75% accuracy** in identifying successful funding applicants. This model might have been improved in a few ways:
 1. Bucketing the "ASK_AMT" column both before and after removing outliers (one bucketed dataset with all the rows and one bucketed dataset with outliers removed) and testing these against the model
 2. Trying out different activation functions in the hidden layers instead of only using relu
