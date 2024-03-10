@@ -18,7 +18,7 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
   - EIN
   - NAME
 ### Compiling, Training, and Evaluating the Model
-- ![image](https://github.com/lvit001/deep-learning-challenge/assets/140283164/4b8286f2-4f07-4a8b-aee5-b34245e26add)
+![image](https://github.com/lvit001/deep-learning-challenge/assets/140283164/4b8286f2-4f07-4a8b-aee5-b34245e26add)
 - **Total Number of Layers:**
   - 3 Hidden Layers
   - 1 Output Layer
