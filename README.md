@@ -32,9 +32,16 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
   -   **Final Output Layer:** 1 Neuron, Sigmoid Activation Function
       - _This is the final layer, the output layer, which only has one neuron as the neuron as this neuron represents the final prediction. The sigmoid activation was utilized as the target variable is binary between 0 and 1. The sigmoid function transforms outputs into a value between 0 and 1._
 - **Was the target model performance achieved?**
-  - **Yes**, the model had an accuracy higher than 75% once it was optimized.
+  - **Yes**, the model had an accuracy above **75%** once it was optimized.
 - **Steps Taken to Optimize the Model:**
     1.  Checked the ASK_AMT column for outliers. There were 8,000 outliers out of approximately 34,000 rows of data. Removed any rows with ask amounts over the upper bound of the data set.
         - In the future, I would try to break this column down into bins to keep all rows in the data
     2.   For the APPLICATION_TYPE and CLASSIFICATION columns, used the `value_counts` function to determine how many of each value were in the column and bucketed the smaller groups together into an "Other" value
-    3.   Added an additional hidden layer to the neural network to increase the consideration of interactions between variables
+    3.   Added a third hidden layer to the neural network to increase the consideration of interactions between variables
+    4.   Added more neurons to each layer for a total of 85 in the hidden layers. Did this to increase the speed of the model and reduce loss.
+### Summary
+The neural network created for Alphabet Soup performed with **75% accuracy** in identifying successful funding applicants. This model might have been improved in a few ways:
+1. Bucketing the "ASK_AMT" column both before and after removing outliers (one bucketed dataset with all the rows and one bucketed dataset with outliers removed) and testing these against the model
+2. Trying out different activation functions in the hidden layers instead of only using relu
+3. Adding additional hidden layers and neurons
+Ultimately, it would be beneficial to run this data through a few different models to see if it might perform better. One model that comes to mind is the **Random Forest** model. The Random Forest model works well on data with outliers, runs efficiently on large databases, and prevents overfitting by the use of multiple classifiers. Additionally, the Random Forest model provides more transparency into which features impact the model through the feature importance function. This will provide analysts and stakeholders with more information on what features have the greatest impact on the model and in turn predict successful funding applicants.
