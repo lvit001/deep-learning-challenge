@@ -18,6 +18,7 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
   - EIN
   - NAME
 ### Compiling, Training, and Evaluating the Model
+- ![image](https://github.com/lvit001/deep-learning-challenge/assets/140283164/4b8286f2-4f07-4a8b-aee5-b34245e26add)
 - **Total Number of Layers:**
   - 3 Hidden Layers
   - 1 Output Layer
@@ -31,4 +32,4 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
   -   **Final Output Layer:** 1 Neuron, Sigmoid Activation Function
       - _This is the final layer, the output layer, which only has one neuron as the neuron as this neuron represents the final prediction. The sigmoid activation was utilized as the target variable is binary between 0 and 1. The sigmoid function transforms outputs into a value between 0 and 1._
 - **Was the target model performance achieved?**
-  - Yes, the model had an accuracy higher than 75% once it was optimized.
+  - **Yes**, the model had an accuracy higher than 75% once it was optimized.
