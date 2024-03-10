@@ -23,10 +23,12 @@ The purpose of this analysis is to develop a neural network model with a 75% acc
   - 1 Output Layer
 - **Breakdown of each Layer:**
   -   **1st Hidden Layer:** 50 Neurons, Relu Activation Function
-    - _This layer has the highest number of neurons as it is the first layer. It utilizes the relu function since it is the fastest at learning and provides simplified outputs_  
+    - _This layer has the highest number of neurons as it is the first layer. It utilizes the relu function since it is the fastest at learning and provides simplified outputs_
   -   **2nd Hidden Layer:** 25 Neurons, Relu Activation Function
     - _This layer has the second-highest number of neurons as it is the second layer, and I am decreasing the amount of neurons with each hidden layer. I choose to use the relu function for the same reasoning as above.
   -   **3rd Hidden Layer:** 10 Neurons, Relu Activation Function
-    - _This layer has the second-lowest number of neurons as it is the third and final hidden layer. **It utilizes the relu function since it is the fastest at learning and provides simplified outputs_ ** 
+    - _This layer has the second-lowest number of neurons as it is the third and final hidden layer. **It utilizes the relu function since it is the fastest at learning and provides simplified outputs_ **
   -   **Final Output Layer:** 1 Neuron, Sigmoid Activation Function
-    - _This is the final layer, the output layer, which only has one neuron as the neuron as this neuron represents the final prediction. The sigmoid activation was utilized as the target variable is binary between 0 and 1. The sigmoid function transforms outputs into a value between 0 and 1._  
+    - _This is the final layer, the output layer, which only has one neuron as the neuron as this neuron represents the final prediction. The sigmoid activation was utilized as the target variable is binary between 0 and 1. The sigmoid function transforms outputs into a value between 0 and 1._
+- **Was the target model performance achieved?**
+  - Yes, the model had an accuracy higher than 75% once it was optimized.
